@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="w-screen bg-cover bg-center relative flex flex-col bg-[#E2D9C8A6]">
+
+    <!-- Navigation Bar -->
+    <nav class="absolute top-0 w-full bg-[#222222] bg-opacity-35 text-white py-4 px-8 flex justify-between items-center z-10">
+        <div class="text-2xl font-bold pl-8">
+            <span class="font-bold">Black</span> <span class="font-normal">Studio</span>
+        </div>
+        <div class="hidden md:flex space-x-6 text-lg pr-8">
+            <a href="/Home/home.html" class="font-light hover:underline">HOME</a>
+            <a href="#about" class="font-light hover:underline">ABOUT</a>
+            <a href="#portfolio" class="font-light hover:underline">PORTFOLIO</a>
+            <a href="/Contact/conatct.html" class="font-light hover:underline">CONTACT</a>
+            <a href="#contact" class="font-light hover:underline">PRICING</a>
+        </div>
+    </nav>
+
+    <!-- First Section (Hero Section) -->
+    <section id="home" class="h-screen w-screen bg-cover bg-center relative flex flex-col" style="background-image: url('homeImage/Hero_section/loft-luxury-living-room-with-bookshelf-near-dining-table\ 1.png');">
+        <div class="flex flex-col items-start justify-center h-full px-10 md:px-20 text-white bg-black bg-opacity-40">
+            <h1 class="text-4xl md:text-5xl font-light max-w-3xl leading-tight">
+                We take pride in building stylish <br>and featured interior design.
+            </h1>
+            <a href="#about" class="mt-6 text-lg font-medium no-underline decoration-2 hover:underline">
+                Explore site →
+            </a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="absolute bottom-10 left-8 flex flex-col space-y-4 text-white">
+            <a href="#" class="block text-2xl hover:opacity-80"><img src="homeImage/Hero_section/insta.png" alt=""></a>
+            <a href="#" class="block text-2xl hover:opacity-80"><img src="homeImage/Hero_section/fb.png" alt=""></a>
+            <a href="#" class="block text-2xl hover:opacity-80"><img src="homeImage/Hero_section/insta.png" alt=""></a>
+        </div>
+
+        <!-- Pagination and Indicators -->
+        <div class="absolute right-5 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3">
+            <span class="block w-3 h-3 bg-white rounded-full"></span>
+            <span class="block w-3 h-3 bg-gray-400 rounded-full"></span>
+            <span class="block w-3 h-3 bg-gray-400 rounded-full"></span>
+        </div>
+        <div class="absolute bottom-10 right-10 text-white text-lg font-bold">
+            01 <span >/ <sup>04</sup></span>
+        </div>
+    </section>
+
+
+<!-- Second Section (About Us Section) -->
+    <!-- About Us Section -->
+    <section id="about" class="relative bg-[#222222] text-white py-16 px-8">
+        <!-- Background Image with Blur and Opacity -->
+        <div class="absolute inset-0 bg-cover bg-center filter blur-xs opacity-[0.1]"
+            style="background-image: url('homeImage/About_us/luxury-modern-living-room-with-elegant-design-generated-by-ai\ 1.png');">
+        </div>
+
+        <!-- Content Layer -->
+        <div class="relative container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Text Content and Statistics -->
+            <div>
+                <!-- About Us Title -->
+                <h3 class="text-yellow-500 uppercase text-sm font-semibold mb-4">ABOUT US</h3>
+
+                <!-- Main Text -->
+                <h2 class="text-4xl font-bold leading-snug mb-6">
+                    Creative solutions by professional designers
+                </h2>
+                <p class="text-lg font-light text-background: #E2D9C8;
+            mb-8">
+                    Our team is made up of great designers around the globe with years of experience and
+                    professionalism. We’ve tackled several projects this past few years, and gained global recognition
+                    in our expertise.
+                </p>
+                <a href="#"
+                    class="inline-block px-6 py-3 text-black bg-[#E2D9C8] rounded-full hover:bg-[#d1c7b4] transition">
+                    Read More
+                </a>
+
+                <!-- Statistics Section -->
+                <div class="mt-8 grid grid-cols-3 divide-x divide-gray-700 text-center">
+                    <!-- Awards Received -->
+                    <div class="px-4">
+                        <h3 class="text-3xl font-bold text-yellow-500">24+</h3>
+                        <p class="text-sm font-light text-gray-300">Awards received</p>
+                    </div>
+
+                    <!-- Projects Completed -->
+                    <div class="px-4">
+                        <h3 class="text-3xl font-bold text-yellow-500">894+</h3>
+                        <p class="text-sm font-light text-gray-300">Projects completed</p>
+                    </div>
+
+                    <!-- Company Division -->
+                    <div class="px-4">
+                        <h3 class="text-3xl font-bold text-yellow-500">42+</h3>
+                        <p class="text-sm font-light text-gray-300">Company Division</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Content -->
+            <div class="relative">
+                <img src="homeImage/About_us/empty-flat-interrior-with-elements-decoration 1.png" alt="Modern Interior Design"
+                    class="rounded-lg shadow-lg w-full">
+            </div>
+        </div>
+    </section>
+
+</section>
+
+<!-- Our Services Section -->
+<section class="bg-[#222222] text-white py-16">
+    <div class="container mx-auto">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h3 class="text-yellow-500 uppercase text-sm font-semibold">Our Services</h3>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8">
+            <!-- Service 1 -->
+            <div class="text-left">
+                <div class="mb-6" >
+                    <img src="homeImage/OurService/consulation.png" alt="Design Consultation Icon" class="position:leftmx-auto w-12 h-12">
+                </div>
+                <h3 class="text-lg font-bold mb-4">Design Consultation</h3>
+                <p class="text-sm font-light mb-6">
+                    Get ideas of possibilities open <br> to you regarding space, <br>products, finishes, and the cost <br>before you commit, comes in variation.
+                </p>
+                <a href="#" class="text-left text-white-500 font-medium">
+                    Read more <span class="ml-2">→</span>
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="text-left">
+                <div class="mb-6">
+                    <img src="homeImage/OurService/interior.png" alt="Interior Design Icon" class="position:left w-12 h-12" >
+                </div>
+                <h3 class="text-lg font-bold mb-4">Interior Design</h3>
+                <p class="text-sm font-light mb-6">
+                    Design service tailored to each <br>client's brief and budget,<br> bringing their ideas into fruition <br>in a carefully curated scheme.
+                </p>
+                <a href="#" class="text-left text-white-500 font-medium ">
+                    Read more <span class="ml-2">→</span>
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="text-left">
+                <div class="mb-6">
+                    <img src="homeImage/OurService/projectcoordination.png" alt="Project Coordination Icon" class="position:leftmx-auto w-12 h-12">
+                </div>
+                <h3 class="text-lg font-bold mb-4">Project Coordination</h3>
+                <p class="text-sm font-light mb-6">
+                    Our team also actively engages <br>
+                     in the planning process of several <br> building projects with other <br> teams on joint projects.
+                </p>
+                <a href="#" class="text-left text-white-500 font-medium">
+                    Read more <span class="ml-2">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Creative Approach Section -->
+<section class=" bg-[#222222] py-16 px-8 md:px-20 flex flex-col items-center justify-center ">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center ">
+        <!-- Text Content -->
+        <div class="bg-[#FDF6E3] relative left-[60%]  p-10 shadow-xl z-20 translate-x-0 w-[50%] h-[90%] max-w-[700px] min-h-[550px] ">
+            
+            <h3 class="text-gray-500 text-sm uppercase mb-4">#Black studio</h3>
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">Creative Approach</h2>
+            <div class="mb-6">
+                <p class="text-gray-700 font-medium text-lg mb-2">Story & Concept</p>
+                <p class="text-gray-600 font-light text-sm">
+                    Read on how we make awesome projects from scratch, through several series of testing and refining to make our awesome masterclass.
+                </p>
+            </div>
+            <hr class="my-4 border-gray-300">
+            <div class="flex justify-between items-center py-4 cursor-pointer hover:text-gray-800">
+                <p class="text-gray-700 font-medium text-lg">Design and Testing</p>
+                <span class="text-gray-700 text-xl font-bold">+</span>
+            </div>
+            <hr class="border-gray-300">
+            <div class="flex justify-between items-center py-4 cursor-pointer hover:text-gray-800">
+                <p class="text-gray-700 font-medium text-lg">Revision and Rendering</p>
+                <span class="text-gray-700 text-xl font-bold">+</span>
+            </div>
+            <hr class="my-4 border-gray-300">
+            <a href="#" class="mt-6 px-8 py-3 bg-[#222222] text-white rounded-full text-sm font-medium hover:bg-gray-800 transition">
+                Read More
+            </a>
+        </div>
+
+        <!-- Image Content -->
+        <div class=" grid grid-cols-2 justify-center items-center w-[100%] ">
+            <div class=" z-10 ">
+                <img src="homeImage/CreativeApproach/spacejoy-eyEy5YZhSvU-unsplash 1.png" alt="Bedroom" class="shadow-xl w-full min-h-[550px]">
+            </div>
+            <div class="">
+                <img src="homeImage/CreativeApproach/aranprime-KbytCpI1i5I-unsplash 1.png" alt="Living Room" class=" shadow-xl w-[70%] min-h-[500px]">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Category Section -->
+<section class="bg-[#222222] text-white py-16 ">
+    <!-- Title and Description -->
+    <div class="text-center mb-12 ">
+        <h3 class="text-yellow-500 uppercase text-sm font-semibold">Category</h3><br>
+        <h2 class="text-3xl md:text-4xl font-[400] mb-4">Discover Your Unique Taste</h2>
+        <p class="text-gray-400 text-lg font-light">
+            Our team prides itself on creating different styles of design, br complementing the client's taste and budget.
+        </p>
+    </div>
+
+    <!-- Grid Layout for Styles -->
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-8">
+        <!-- Minimalistic Style (1st Grid) -->
+        <div class="flex flex-col items-center">
+            <img src="homeImage/category/2151047574 1.png" 
+                alt="Minimalistic Style" 
+                class="w-[530px] h-[459px] object-cover rounded-tl-[45px]  shadow-lg mb-6">
+            <h3 class="text-[42px] font-[400] mb-2 w-full items-start pl-16">Minimalistic Style</h3>
+            <p class="text-gray-400 text-[20px] font-light w-full items-start pl-16">
+                Shedding off the excessive but still maintaining the <br>classiness and stylishness.
+            </p>
+        </div>
+
+        <!-- Japanese Style (2nd Grid) -->
+        <div class="flex flex-col items-center">
+            <img src="homeImage/category/traditional-house-interior-design 1.png" 
+                alt="Japanese Style" 
+                class="w-[630px] h-[459px] object-cover rounded-tl-[48.69px]  shadow-lg mb-6">
+            <h3 class="text-[42px] font-[400] mb-2 w-full items-start pl-12">Japanese Style</h3>
+            <p class="text-gray-400 text-[20px] font-light w-full items-start pl-12">
+                Enhancing the natural polished look of trees and wooden, <br>simple, artistic, and beautiful.
+            </p>
+        </div>
+
+        <!-- Royalty Style (3rd Grid) -->
+        <div class="flex flex-col items-center">
+            <img src="homeImage/category/luxury-modern-living-room-with-elegant-design-generated-by-ai 2.png" 
+                alt="Royalty Style" 
+                class="w-[630px] h-[459px] object-cover rounded-tl-[48.69px]  shadow-lg mb-6">
+            <h3 class="text-[42px] font-[400] mb-2 w-full items-start pl-12">Royalty Style</h3>
+            <p class="text-gray-400 text-[20px] font-light w-full items-start pl-12">
+                Elegant luxurious portraying class and authority, a style <br>
+                 befitting for Kings and Monarchs.
+            </p>
+        </div>
+
+        <!-- Wooden Style (4th Grid) -->
+        <div class="flex flex-col items-center">
+            <img src="homeImage/category/photorealistic-wooden-house-interior-with-timber-decor-furnishings 1.png" 
+                alt="Wooden Style" 
+                class="w-[530px] h-[459px] object-cover rounded-tl-[45px]  shadow-lg mb-6">
+                <h3 class="text-[42px] font-[400] mb-2  w-full items-start pl-16">Wooden Style</h3>
+            <p class="text-gray-400 text-[20px] font-light w-full items-start pl-16">
+                Enhancing the natural polished look of trees and <br>wooden, simple, artistic, and beautiful.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Projects Section -->
+<section class="bg-[#222222] text-white py-16">
+    <!-- Section Title -->
+    <div class="text-center mb-12">
+        <h3 class="text-yellow-600 uppercase text-sm font-semibold">Our Projects</h3>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="container mx-auto space-y-16 px-8">
+        <!-- Project 1 -->
+        <div class="relative" style="width: 1206.33px; height: 617px; margin-left: auto; margin-right: auto; ">
+            <img src="homeImage/OurProject/photorealistic-wooden-house-interior-with-timber-decor-furnishings 2.png" 
+                alt="Cassanova Palace" 
+                class="w-full h-full object-cover rounded-2xl shadow-lg">
+            <div class="absolute bottom-4 left-4 text-white bg-black bg-opacity-20 rounded-lg px-4 py-2">
+                <h4 class="text-lg font-bold">Cassanova Palace</h4>
+                <p class="text-sm font-light">Alabama, New York 2020</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="relative" style="width: 1206.33px; height: 617px; margin-left: auto; margin-right: auto; ">
+            <img src="homeImage/OurProject/card 2.png" 
+                alt="Perialina" 
+                class="w-full h-full object-cover rounded-2xl shadow-lg">
+            
+        </div>
+
+        <!-- Project 3 -->
+        <div class="relative" style="width: 1208.33px; height: 617px; margin-left: auto; margin-right: auto; ">
+            <img src="homeImage/OurProject/card 3.png" 
+                alt="Fabby Castle" 
+                class="w-full h-full object-cover rounded-2xl shadow-lg">
+            
+        </div>
+    </div>
+
+    <!-- More Projects Button -->
+    <div class="text-center mt-12">
+        <a href="#" class="px-6 py-2 text-black bg-[#E0D6C4] rounded-full hover:bg-gray-400 text-sm font-medium">
+            More Projects
+        </a>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+    <section class="p-16 bg-[#222222]" >
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-semibold mb-6 text-[#DA9C27A6]">REVIEWS</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-[#222222]] rounded-lg">
+                    <img src="homeImage/Reviews/3d-rendering-loft-luxury-living-room-with-design-chandelier 1.png" alt="Interior Design"
+                        class="w-full rounded-lg mb-4">
+                </div>
+                <div class="bg-white m-8 p-8 pt-12 text-black rounded-3xl flex flex-col justify-between">
+                    <h4 class="text-3xl font-light text-slate-500">TESTIMONIALS</h4>
+                    <h5 class="text-6xl text-[#222222]">Bringing your ideas into reality</h5>
+                    <p class="text-2xl">"Consulting Black Studio during the process of building my castle really helped
+                        giving the house the feel I envisioned, they deliver"</p>
+                    <div class="flex mt-6">
+                        <img src="homeImage/Reviews/Ellipse 4.png" alt="Reviewer" class="w-16 h-16 rounded-full mr-4">
+                        <div class="h-[15vh] w-[100%] flex flex-col">
+                            <p class="text-3xl">Claura James</p>
+                            <p class="text-lg text-gray-400">TikTok Influencer</p>
+                        </div>
+                    </div>
+                 <!-- Navigation Buttons -->
+                 <div class="flex justify-end w-full space-x-2 font-light">
+                    <div class="h-12 w-12 rounded-full text-gray-600 border-solid border-2 border-gray-700">
+                        <div class="flex justify-center items-center text-4xl">&lt;</div>
+                        </div>
+                        <div class="h-12 w-12 bg-[#9A7126] rounded-full border-solid border-2 border-gray-700">
+                            <div class="text-white flex justify-center items-center text-4xl">
+                                &gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+<!-- Contact Us Section -->
+<section class="bg-[#222222] text-white py-16 px-8">
+    <div class="container mx-auto">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h3 class="text-yellow-600 uppercase text-sm font-medium  mb-2">Contact Us</h3>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-left ">Have a project?</h2>
+            <p class="text-gray-150 text-lg font-light text-left">
+                Let’s make it outstanding
+            </p>
+            <p class=" text-sm mt-2 text-left">
+                <br>Fill out this form and our team will get back to you.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Name -->
+            <div class="flex flex-col">
+                <label for="name" class="text-gray-150 text-sm mb-2">Your Name*</label>
+                <input id="name" type="text" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+            </div>
+            <!-- Email -->
+            <div class="flex flex-col">
+                <label for="email" class="text-gray-150 text-sm mb-2">Your Email Address*</label>
+                <input id="email" type="email" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+            </div>
+            <!-- Phone Number -->
+            <div class="flex flex-col">
+                <label for="phone" class="text-gray-150 text-sm mb-2">Your Phone Number*</label>
+                <input id="phone" type="text" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+            </div>
+            <!-- Company Name -->
+            <div class="flex flex-col">
+                <label for="company" class="text-gray-150 text-sm mb-2">Company Name</label>
+                <input id="company" type="text" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+            </div>
+            <!-- Service -->
+            <div class="flex flex-col">
+                <label for="service" class="text-gray-150 text-sm mb-2">Select a Service</label>
+                <select id="service" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+                    <option value="" disabled selected class="bg-black">Select a service</option>
+                    <option value="design" class="bg-black">Design</option>
+                    <option value="consultation" class="bg-black">Consultation</option>
+                    <option value="development" class="bg-black">Development</option>
+                </select>
+            </div>
+            <!-- Subject -->
+            <div class="flex flex-col">
+                <label for="subject" class="text-gray-150 text-sm mb-2">Subject</label>
+                <input id="subject" type="text" class="bg-transparent border-b border-gray-400 text-white focus:outline-none ">
+            </div>
+            <!-- Message -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col">
+                <label for="message" class="text-gray-15 text-sm mb-2">Your Message*</label>
+                <textarea id="message"  class="bg-transparent border-b border-gray-400 text-white focus:outline-none "></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3 text-left">
+                <button type="submit" class="mt-6 px-8 py-2 bg-transparent border border-gray-150 text-gray-150 rounded-full ">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<div class="container mx-auto px-24 py-6 ">
+    <div class="flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-bold text-black">Black Studio</h1>
+            <p class="text-black">Style your interior with us</p>
+        </div>
+        <div class="space-x-4">
+            <a href="#" class="text-black">HOME</a>
+            <a href="#" class="text-black">PAGES</a>
+            <a href="#" class="text-black">GALLERY</a>
+        </div>
+    </div>
+    <div class="flex justify-start space-x-4 mt-8">
+        <a href="#" class="text-white">
+            <i class="fab fa-facebook fa-2x bg-[#908B81] p-4 rounded-full"></i>
+        </a>
+        <a href="#" class="text-white">
+            <i class="fab fa-instagram fa-2x bg-[#908B81] p-4 rounded-full"></i>
+        </a>
+        <a href="#" class="text-white">
+            <i class="fab fa-twitter fa-2x bg-[#908B81] p-4 rounded-full"></i>
+        </a>
+        <a href="#" class="text-white">
+            <i class="fab fa-linkedin fa-2x bg-[#908B81] p-4 rounded-full"></i>
+        </a>
+    </div>
+    <div class="border-t border-gray-600 mt-8 pt-4 flex justify-between text-sm text-black">
+        <p>Black Studio @ All Right Reserved</p>
+        <div class="space-x-4">
+            <a href="#" class="text-black">Terms and Conditions</a>
+            <a href="#" class="text-black">Privacy Policy</a>
+            <a href="#" class="text-black">Cookies</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

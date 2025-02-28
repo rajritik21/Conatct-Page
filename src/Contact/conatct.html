@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        #fullname::placeholder {
+            color: black;
+        }
+    </style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-[#222] text-white font-sans">
+    <!-- Navigation Bar -->
+    <header class="bg-[#333] py-4 fixed w-full">
+        <div class="container mx-auto flex justify-between items-center px-[5vw]">
+            <h1 class="text-xl font-bold">Black <span class="font-light">Studio</span></h1>
+            <nav class="hidden md:flex space-x-6">
+                <button class="md:hidden text-gray-300 focus:outline-none" id="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5M3.75 12h16.5m-16.5 6.75h16.5" />
+                    </svg>
+                </button>
+                <div class=" md:flex space-x-6" id="menu"></div>
+                <a href="/Home/home.html" class="text-gray-300 hover:text-white hover:underline">HOME</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:underline">PAGES</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:underline ">PORFTFLIO</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:underline">ABOUT</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:underline">CONTACT</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:underline">PRICING</a>
+            </nav>
+                 </div>
+    </header>
+    <!-- Contact Information Section -->
+    <section class="py-24 flex justify-center w-full items-center bg-[#222] text-white">
+        <div class="max-w-6xl w-full">
+            <div class="flex items-center mb-16">
+                <div class="w-24 h-1 bg-white mr-4"></div>
+                <h1 class="text-4xl md:text-5xl font-semibold bold text-secondary">Contact us</h1>
+            </div>
+
+            <div class="flex justify-between gap-8 mt-12">
+                <div class="flex space-x-2">
+                    <div class="m-[5%] h-12 w-12 flex items-center justify-center flex-shrink-0">
+                        <img src="contact_image/icon/Group 34.png" alt="icon">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold text-secondary mb-2">Address</h2>
+                        <p class="text-text-gray leading-relaxed">Jaipur&nbsp;Rajasthan&nbsp;INDIA<br>Pin 342087
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-6">
+                    <div class="m-[5%] h-12 w-12 flex items-center justify-center flex-shrink-0">
+                        <img src="contact_image/icon/Group 33.png" alt="icon">
+                    </div>
+                    <div class="w-[45%]">
+                        <h2 class="text-2xl font-semibold mb-2">Call us</h2>
+                        <span class="text-text-gray leading-relaxed">+91&nbsp;9876543210</span>
+                    </div>
+                </div>
+
+                <div class="flex space-x-6">
+                    <div class="m-[5%] h-12 w-12 flex items-center justify-center flex-shrink-0">
+                        <img src="contact_image/icon/Group 35.png" alt="icon">
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-2">Email us</h2>
+                        <p class="text-text-gray leading-relaxed">info@test.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-semibold text-white mb-2">Get in touch with us.</h2>
+                <p class="text-4xl text-text-gray font-semibold">We're here to assist you.</p>
+            </div>
+            <!-- Fullname -->
+            <form class="max-w-4xl mx-auto bg-white p-16 rounded-3xl shadow-lg text-[#808080]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="flex flex-col">
+                        <label for="fullname" class="text-sm text-text-gray mb-1 ">Full name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Ram Kumar Sharma"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Email -->
+                    <div class="flex flex-col">
+                        <label for="email" class="text-sm text-text-gray mb-1">Email address</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!--Phone Number  -->
+                    <div class="flex flex-col">
+                        <label for="phone" class="text-sm text-text-gray mb-1">Phone number</label>
+                        <input type="tel" id="phone" name="phone"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Date of Birth -->
+                    <div class="flex flex-col">
+                        <label for="dob" class="text-sm text-text-gray mb-1">Date of birth</label>
+                        <input type="date" id="dob" name="dob"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Gender -->
+                    <div class="flex flex-col">
+                        <label for="gender" class="text-sm text-text-gray mb-1">Gender</label>
+                        
+                        <select name="gender" id="gender"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium">
+                            <option value="" disabled selected>Select one</option>
+                            <option value="Male">Male </option>
+                            <option value="Female">Female</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <!-- City -->
+                    <div class="flex flex-col">
+                        <label for="city" class="text-sm text-text-gray mb-1">City</label>
+                        <input type="text" id="city" name="city"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- State -->
+                    <div class="flex flex-col">
+                        <label for="state" class="text-sm text-text-gray mb-1">State</label>
+                        <input type="text" id="state" name="state"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Country -->
+                    <div class="flex flex-col">
+                        <label for="country" class="text-sm text-text-gray mb-1">Country</label>
+                        <input type="text" id="country" name="country"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Address -->
+                    <div class="flex flex-col">
+                        <label for="address" class="text-sm text-text-gray mb-1">Address</label>
+                        <input type="text" id="address" name="address"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium" />
+                    </div>
+                    <!-- Message -->
+                    <div class="flex flex-col ">
+                        <label for="message" class="text-sm text-text-gray mb-1">Message</label>
+                        <textarea id="message" name="message" rows="1"
+                            class="w-full p-3 border-b-2 border-gray-300 focus:border-secondary outline-none text-gray-800 font-medium"></textarea>
+                    </div>
+                    <!-- Counselling -->
+                    <div class="flex flex-col">
+                        <p class="text-text-gray mb-4">Request a counselling session</p>
+                        <div class="flex space-x-8">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="counselling" value="yes" checked
+                                    class="w-5 h-5 text-secondary focus:ring-secondary bg-[#FFEED3]" />
+                                <span class="text-text-gray">Yes</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="counselling" value="no"
+                                    class="w-5 h-5 text-secondary focus:ring-secondary" />
+                                <span class="text-text-gray">No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Upload CV -->
+                    <div class="flex flex-col ">
+                        <label for="cv" class="text-sm text-text-gray mb-1">Upload your CV/Resume</label>
+                        <label for="cv"
+                            class="flex items-center space-x-2 text-gray-500 cursor-pointer border-b-2 border-gray-300 focus:border-secondary outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-11 mb-2 fill-gray-500" viewBox="0 0 32 32">
+                                <path
+                                    d="M23.75 11.044a7.99 7.99 0 0 0-15.5-.009A8 8 0 0 0 9 27h3a1 1 0 0 0 0-2H9a6 6 0 0 1-.035-12 1.038 1.038 0 0 0 1.1-.854 5.991 5.991 0 0 1 11.862 0A1.08 1.08 0 0 0 23 13a6 6 0 0 1 0 12h-3a1 1 0 0 0 0 2h3a8 8 0 0 0 .75-15.956z"
+                                    data-original="#000000" />
+                                <path
+                                    d="M20.293 19.707a1 1 0 0 0 1.414-1.414l-5-5a1 1 0 0 0-1.414 0l-5 5a1 1 0 0 0 1.414 1.414L15 16.414V29a1 1 0 0 0 2 0V16.414z"
+                                    data-original="#000000" />
+                            </svg>
+                            <span>Choose file</span>
+                        </label>
+                        <input type="file" id="cv" name="cv" class="hidden" />
+                        <p id="file-name-display" class="text-sm text-gray-600"></p>
+                    </div>
+                    <!-- Terms and Conditions -->
+                    <div class="flex items-center space-x-2 md:col-span-2">
+                        <input type="checkbox" id="terms" name="terms"
+                            class="w-5 h-5 text-secondary focus:ring-secondary rounded" />
+                        <label for="terms" class="text-text-gray cursor-pointer">Agree terms and conditions</label>
+                    </div>
+                    <!-- Submit -->
+                    <button type="submit"
+                        class="w-full bg-[#DA9C27] text-white py-4 px-8 text-md font-medium hover:bg-opacity-90 transition duration-300">Submit
+                        Information</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="p-16">
+        <div class="container mx-auto">
+            <h3 class="text-2xl font-semibold mb-6 text-[#DA9C27A6]">REVIEWS</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-[#222] rounded-lg">
+                    <img src="contact_image/reviews/3d-rendering-loft-luxury-living-room-with-design-chandelier 1.png"
+                        alt="Interior Design" class="w-full rounded-lg mb-4">
+                </div>
+                <div class="bg-white m-8 p-8 pt-12 text-black rounded-3xl flex flex-col justify-between">
+                    <h4 class="text-3xl font-light text-slate-500">TESTIMONIALS</h4>
+                    <h5 class="text-5xl text-[#222]">Bringing your ideas into reality</h5>
+                    <p class="text-2xl">"Consulting Black Studio during the process of building my castle really helped
+                        giving the house the feel I envisioned, they deliver"</p>
+                    <div class="flex mt-6">
+                        <img src="contact_image/reviews/Ellipse 4.png" alt="Reviewer"
+                            class="w-16 h-16 rounded-full mr-4">
+                        <div class="h-[15vh] w-[100%] flex flex-col">
+                            <p class="text-3xl">Claura James</p>
+                            <p class="text-lg text-gray-400">TikTok Influencer</p>
+                        </div>
+                        <div class="flex justify-end w-full space-x-2 font-light">
+                            <div class="h-12 w-12 rounded-full text-gray-600 border-solid border-2 border-gray-700">
+                                <div class="flex justify-center items-center text-4xl">&lt;</div>
+                            </div>
+                            <div class="h-12 w-12 bg-[#9A7126] rounded-full border-solid border-2 border-gray-700">
+                                <div class="text-white flex justify-center items-center text-4xl">
+                                    &gt;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Map Section -->
+    <section class="flex justify-center items-center">
+        <img src="contact_image/map/image 19.png" alt="map" class="object-cover">
+    </section>
+    <!-- FAQ section -->
+
+    <div class="max-w-3xl mx-auto p-6 mt-[5%]">
+        <h1 class="text-3xl font-bold text-center mb-2">Do you have any quesiton</h1>
+        <p class="text-center mb-6">Our support team ready to help you, please contact with them</p>
+
+        <div class="space-y-4">
+            <div class="border-b border-gray-700 py-4">
+                <div class="flex items-center">
+                    <div class="bg-yellow-500 text-gray-900 rounded-full p-2 mr-4 flex items-center justify-center"
+                        style="width: 24px; height: 24px;">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p class="text-lg">How to contact with riders emergency ?</p>
+                </div>
+            </div>
+            <div class="border-b border-gray-700 py-4">
+                <div class="flex items-center">
+                    <div class="bg-yellow-500 text-gray-900 rounded-full p-2 mr-4 flex items-center justify-center"
+                        style="width: 24px; height: 24px;">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p class="text-lg">App installation failed, how to update system information?</p>
+                </div>
+            </div>
+            <div class="border-b border-gray-700 py-4">
+                <div class="flex items-center">
+                    <div class="bg-yellow-500 text-gray-900 rounded-full p-2 mr-4 flex items-center justify-center"
+                        style="width: 24px; height: 24px;">
+                        <i class="fas fa-minus"></i>
+                    </div>
+                    <p class="text-lg">Website reponse taking time, how to improve?</p>
+                </div>
+                <p class="mt-2 text-gray-400">Get your blood tests delivered at the home collect a sample from
+                    management news. Get your blood tests delivered at the home collect a sample from management news.
+                    Get your blood tests delivered at the home collect a sample from management news. Get your blood
+                    tests delivered at the home.</p>
+            </div>
+            <div class="border-b border-gray-700 py-4">
+                <div class="flex items-center">
+                    <div class="bg-yellow-500 text-gray-900 rounded-full p-2 mr-4 flex items-center justify-center"
+                        style="width: 24px; height: 24px;">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <p class="text-lg">New update fixed all bug and issues</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-white text-black">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-semibold mb-4">Subscribe to Our Newsletter <br> for Design Insights</h3>
+            <p class="text-gray-600 text-2xl mb-6">Be the first to discover trends, inspirations, and special offers as
+                we
+                <br>bring the world of design directly to your inbox
+            </p>
+            <form class="flex justify-center items-center space-x-4 bg-slate-100 h-[25vh]">
+                <div class="relative w-1/2">
+                    <input type="email" placeholder="Enter your email address"
+                        class="bg-white text-gray-700 p-4 w-full rounded-lg focus:outline-none shadow-lg px-[6%] h-[10vh]">
+                    <div class="absolute inset-y-0 left-2 flex items-center">
+                        <svg class="h-8 w-8 text-neutral-400" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                    </div>
+                </div>
+                <button type="submit"
+                    class="bg-yellow-500 text-white text-2xl px-16 py-3 rounded h-[10vh]">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="py-8 px-16 bg-[#E2D9C8A6]">
+        
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold text-black">Black Studio</h1>
+                <p class="text-black">Style your interior with us</p>
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="text-black">HOME</a>
+                <a href="#" class="text-black">PAGES</a>
+                <a href="#" class="text-black">GALLERY</a>
+            </div>
+        </div>
+        <div class="container mx-auto flex justify-start space-x-4 mt-8">
+            <a href="#" class="text-white">
+                <i class="fab fa-facebook fa-2x bg-[#908B81] p-4 rounded-full"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fab fa-instagram fa-2x bg-[#908B81] p-4 rounded-full"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fab fa-twitter fa-2x bg-[#908B81] p-4 rounded-full"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fab fa-linkedin fa-2x bg-[#908B81] p-4 rounded-full"></i>
+            </a>
+        </div>
+        <div class="container mx-auto border-t border-gray-600 mt-8 pt-4 flex  justify-between text-sm text-black">
+            <p>Black Studio @ All Right Reserved</p>
+            <div class="space-x-4">
+                <a href="#" class="text-black">Terms and Conditions</a>
+                <a href="#" class="text-black">Privacy Policy</a>
+                <a href="#" class="text-black">Cookies</a>
+            </div>
+        </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+
+</html>
